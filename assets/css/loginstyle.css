@@ -1,0 +1,465 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+/* ===================================== Import Variables ================================== */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
+/* ===================================== Basic CSS ==================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; 
+}
+
+body{
+  font-family: "Open Sans";
+}
+.student-wrapper{
+  padding-top: 35px;
+}
+img {
+  max-width: 100%; 
+}
+
+.mt-login-heading{
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+.login-p{
+    padding:10px;
+}
+.right-side{
+      padding:70px;
+    
+}
+.password-lable{
+    margin-right: 323px;
+    font-size: 13px;
+    
+}
+.Email-lable{
+     margin-right: 349px;
+    font-size: 13px;
+    
+}
+
+
+
+/*login css start*/
+
+.login-main{
+    background-color:white;
+}
+
+/*login css end*/
+
+@media (max-width: 575px),
+only screen and (min-width: 576px) and (max-width: 767px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 992px) and (max-width: 1199px) {
+    .Email-lable{
+     margin-right: 290px !important;
+    font-size: 13px;
+    
+}
+.password-lable{
+    margin-right: 265px !important;
+    font-size: 13px;
+    
+}
+    
+    .mt-top{
+    margin-top: 144px;
+    margin-bottom: 72px;
+    }
+    .right-side {
+    padding: 29px !important;
+    margin-left: -37px !important;
+    }
+    
+    ._form_05{
+        padding:0px !important;
+    }
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444; 
+}
+
+a:hover {
+  color: #444; 
+}
+
+
+
+ol,ul{
+  margin:0px;
+  padding:0px;
+}
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none; 
+}
+._form_051{
+    display:none;
+}
+
+._form_05{
+  /*background:url(../images/bg.jpg);*/
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  padding:172px; 
+  position:relative;
+  display:flex;
+  align-items:center;
+ 
+  z-index:2;
+  overflow:hidden;
+
+}
+
+
+
+._form-05-box{
+  width: 80%;
+  max-width:100%;
+  position:relative;
+  display:block;
+  margin: 15px auto;
+ 
+  border-radius:6px;
+  height: 100%;
+  z-index:3;
+  padding: 35px;
+  display: block;
+}
+
+.form-05-box-a{
+  padding: 10px 30px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+._mn_df{
+  padding:0px 20px;
+  /* background:#fff; */
+  border-top-right-radius:6px;
+  border-bottom-right-radius:6px;
+  padding-right: 45px;
+  /* background:url(../images/bsd.jpg); */
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+._form_05_logo,._form_05_socialmedia,.main-head{
+  margin:20px 0px;
+  display:inline-block;
+  width:100%;
+  text-align:center;
+  text-align: center;
+}
+
+._form_05_logo h2{
+  font-size:20px;
+  font-weight:400;
+  letter-spacing:0.5px;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+._form_05_logo p{
+    /* color: black; */
+    line-height: 22px;
+    text-align: left;
+    margin: 30px 0 0 0;
+    text-align: center;
+    font-size: .9rem;
+}
+
+._lk_nb{
+  display:flex;
+  background-color: #B3CEE5;
+}
+
+._form_05_socialmedia ol li{
+  display:block;
+  width:100%;
+  cursor:pointer;
+  padding:10px 5px 10px 35px;
+  /* background:#3b5998; */
+  color:#fff;
+  font-family: "Open Sans";
+  font-size:13px;
+  text-align:left;
+  position:relative;
+  border-radius:2px;
+  margin:10px 0 0 0;
+}
+
+._form_05_socialmedia ol li:nth-child(2){
+  /* background:#00aced; */
+    background:  #ff783d;
+}
+
+._form_05_socialmedia ol li:nth-child(3){
+  background:#c32f10;
+}
+
+._form_05_socialmedia ol li i{
+    position: absolute;
+    color:#fff;
+    font-size:15px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    top: 0;
+}
+
+.main-head h2{
+  font-size:18px;
+  color:#000;
+  font-weight: 700;
+
+}
+
+.form-group{
+  padding:20px 0px;
+  display:inline-block;
+  width:100%;
+  position:relative;
+}
+
+.form-check-label,.form-group a{
+ font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.form-group p{
+  margin:0px;
+  font-size: .9rem;
+}
+
+.form-control{
+  min-height:45px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 10px 15px;
+}
+
+.checkbox{
+  display:flex;
+  justify-content:space-around;
+}
+
+._btn_04 {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0px;
+    background: #0265b5;
+    border-radius:5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+}
+
+._btn_04 a{
+  font-size:15px;
+  color:#fff;
+}
+
+/* register css with shyam :start */
+.div-try input{
+  width: 93%;
+}
+.div-try select{
+  width: 93%;
+}
+.form-control {
+  /* display: block; */
+  width: 100%;
+  /* min-height: calc(1.5em + 0.75rem + 2px); */
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  /* line-height: 1.5; */
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 11px;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+margin-top: 7px;
+}
+.form-group {
+  padding: 9px 0px;
+  margin-left: 19px;
+ 
+}
+.fw-bold{
+  font-weight: 600;
+}
+.try-person{
+  position: absolute;
+    top: 50px;
+    left: 6px;
+}
+.try-telephone{
+  position: absolute;
+  top: 50px;
+  left: 6px;
+  color: blue;
+}
+.try-envelope{
+  position: absolute;
+  top: 52px;
+  left: 6px;
+}
+.try-person1{
+  position: absolute;
+  top: 51px;
+  left: 6px;
+}
+.try-pack-ammount{
+  position: absolute;
+  top: 52px;
+  left: 6px;
+
+}
+.try-city-key{
+  position: absolute;
+  top: 51px;
+    left: 6px;
+
+}
+.ps-5{
+  padding-left: 2rem;
+}
+/*._form-05-box1{*/
+/*  display: none;*/
+/*}*/
+
+/* register css with shyam :start */
+
+
+
+ @media screen and (max-width: 767px){
+  /*._form-05-box{*/
+  /*  display: none;*/
+  /*}*/
+  ._form_051{
+      display:block;
+  }
+  ._form-05-box1{
+    display: block;
+    width: 80%;
+    max-width:100%;
+    position:relative;
+    display:block;
+    margin: 15px auto;
+   
+    border-radius:6px;
+    height: 100%;
+    z-index:3;
+    padding: 35px;
+  }
+  ._form_05{
+      /*display:none;*/
+  }
+  
+    .try-row{
+      
+      width: 186%;
+      margin-left: -83px;
+      margin-top: -49px;
+    }
+    ._lk_nb img{
+      
+        height: 281px;
+        width: 437px;
+      
+        margin-left: 33px;
+    }
+    .form-group {
+      padding: 9px 0px;
+      
+  }
+  .div-try1 label{
+    width: 114%;
+    margin-left: -30px;
+  }
+  .div-try1 input{
+    width: 114%;
+    margin-left: -30px;
+  }
+  .div-try1 label{
+    width: 114%;
+    margin-left: -30px;
+  }
+  .div-try1  select{
+    width: 114%;
+    margin-left: -30px;
+  }
+  .try-city-key {
+    position: absolute;
+    top: 51px;
+    left: -23px;
+}
+.try-pack-ammount {
+  position: absolute;
+  top: 52px;
+  left: -23px;
+}
+.try-person1 {
+  position: absolute;
+  top: 51px;
+  left: -23px;
+}
+.try-envelope {
+  position: absolute;
+  top: 52px;
+  left: -23px;
+}
+.try-telephone {
+  position: absolute;
+  top: 50px;
+  left: -23px;
+  color: blue;
+}
+.try-person {
+  position: absolute;
+  top: 50px;
+  left: -23px;
+}
+._btn_04{
+  margin-left: -8px;
+}
+  /* .try-col-lg-6{
+    margin-left: -27px;
+  } */
+   
+   
+ }
+ 
+ 
+ 

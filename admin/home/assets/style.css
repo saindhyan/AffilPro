@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@keyframes move-background {
+    from {
+      background-position: 0%;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(45deg, #c04d34 25%, #64929f 50%, #b3b4bb 75%, #232628 100%);
+    animation: move-background 5s linear infinite;
+    background-size: 200% 100%;
+    animation-direction: alternate;
+    font-family: "Lato", sans-serif;}
+
+.wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .sidebar {
+  width: 200px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0px;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.wrapper .sidebar h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #594f8d;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: #fff;
+}
+
+.wrapper .sidebar .social_media {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a {
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content {
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header {
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info {
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div {
+  margin-bottom: 20px;
+}
+
+.active{
+  color: black;
+  background-color:#dfe0e5;
+}
+@media (max-height: 500px) {
+  .social_media {
+    display: none !important;
+  }
+}
+
+
+h2 {
+  text-align: center;
+  color: #000;
+}
+@media (max-width: 600px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+@media (max-width: 600px) {
+  p {
+    font-size: 12px;
+  }
+}
+table {
+  display: table;
+  width: 80%;
+  margin: auto;
+  color: #000;
+  background-color: black;
+}
+tr {
+  background-color: #d1caca;
+  border-collapse: none;
+}
+tr:nth-child(odd) {
+  background-color: #acabab;
+  border-collapse: none;
+}
+th {
+  width: 33.33%;
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+}
+td {
+  width: 33.33%;
+  padding: 5px 10px;
+  text-align: center;
+  
+}
+@media (max-width: 600px) {
+  table {
+    width: 80%;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    border-bottom: 1px solid #000;
+  }
+}
+.select {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 60px;
+  padding: 5px;
+  background-color: #fa7;
+  color: #000;
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 6px;
+  text-align: center;
+}
+.select:active {
+  background-color: #f96;
+}
+.details {
+  display: none;
+  width: 80%;
+  min-height: 85vh;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #d00;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #fa0;
+}
+@media (max-width: 600px) {
+  .details {
+    width: 80%;
+  }
+}
+#close {
+  float: right;
+  display: block;
+  width: 100px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fa0;
+  color: #fa0;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  #close {
+    width: 75px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+.notes {
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #fa0;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  .notes {
+    width: 90%;
+    font-size: 12px;
+  }
+  .notes h2 {
+    font-size: 18px;
+  }
+}
